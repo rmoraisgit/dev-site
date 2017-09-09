@@ -1,0 +1,1 @@
+var botaoAdiciona = document.querySelector("#adicionar-paciente");
