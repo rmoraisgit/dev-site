@@ -3,6 +3,41 @@ function CalculaImc(peso, altura){
     return imc.toFixed(2);
 }
 
+function ValidaPeso(peso){
+    if(peso>600 || peso<=0){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+function ValidaAltura(altura){
+    if(altura> 2.5 || altura <= 0){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+function ValidaPaciente(objetoPaciente){
+
+    var erros = [];
+
+    if(!ValidaAltura(objetoPaciente.altura)){
+        erros.push("Altura inválida");
+    }
+    if(!ValidaPeso(objetoPaciente.peso)){
+        erros.push("Peso inválido");
+    }
+    if(objetoPaciente.nome.length == 0){
+        erros.push("Nome inválido");
+    }
+
+    return erros;
+}
+
 function CriaClassePaciente(form){
     var Paciente = {
         nome: form.nome.value,
