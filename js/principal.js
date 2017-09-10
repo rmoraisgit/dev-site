@@ -14,7 +14,5 @@ arrayPacientes.forEach(function(paciente){
     if(ValidaAltura(altura.textContent) && ValidaPeso(peso.textContent)){
         imc.textContent = CalculaImc(peso.textContent, altura.textContent);
     }
-
-    
 })
 

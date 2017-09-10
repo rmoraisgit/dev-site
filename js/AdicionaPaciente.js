@@ -16,8 +16,6 @@ var botaoAdiciona = document.querySelector("#adicionar-paciente").addEventListen
         return ;
     }
 
-
-
     var trPaciente = CriaTr(classPaciente);
     var tbody = document.querySelector("#tabela-pacientes");
     tbody.appendChild(trPaciente);
