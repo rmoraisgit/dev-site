@@ -53,13 +53,14 @@ function CriaClassePaciente(form){
 function CriaTd(dado, classe){
     var td = document.createElement("td");
     td.textContent = dado;
-    td.classList.add = classe;
+    td.classList.add(classe);
     return td;
 }
 
 
 function CriaTr(ObjetoPaciente){
     var trObjetoPaciente = document.createElement("tr");
+    trObjetoPaciente.classList.add("paciente");
 
     var tdNome = CriaTd(ObjetoPaciente.nome, "info-nome");
     var tdPeso = CriaTd(ObjetoPaciente.peso, "info-peso");

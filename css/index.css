@@ -1,5 +1,4 @@
-*{
-	box-sizing: border-box;
+*{ box-sizing: border-box;
  }
 
 body{
@@ -140,4 +139,16 @@ button[disabled=disabled], button:disabled {
 .removetr{
 	opacity: 0;
 	transition: 1s;
+}
+
+#filtro{
+	margin-bottom: 8px;
+}
+
+.sumir{
+	display: none;
+}
+
+.msgErro{
+	color:red;
 }

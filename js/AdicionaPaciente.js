@@ -11,6 +11,7 @@ var botaoAdiciona = document.querySelector("#adicionar-paciente").addEventListen
         testaErros.forEach(function(erro){
             var liErro = document.createElement("li");
             liErro.textContent = erro;
+            liErro.classList.add("msgErro")
             ulErros.appendChild(liErro);
         })
         return ;
